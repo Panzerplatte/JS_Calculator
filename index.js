@@ -2,6 +2,9 @@ const display = document.getElementById("display") // Hier weißen wir das Displ
 
 var lastDisplay = [] // Array um alle aktuellen Zahlen und Operator zu speichern.
 
+// TODO \\
+// Ich möchte nicht das Opperatiren doppelt ausgewählt werden können.
+
 // ----- Essentials ----- \\
 
 // Hier schauen wir nach ob der letzte Character eine Zahl oder ein Operator ist.
@@ -134,8 +137,8 @@ function calculate(){
         display.value = eval(display.value)
         lastDisplay = []
     }
-    catch(error){
-        display.value = "Error"
+    catch(error) {
+
     }
 }
 
